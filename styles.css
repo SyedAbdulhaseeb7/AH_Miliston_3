@@ -1,0 +1,238 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Container Styles */
+.container {
+
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 800px;
+  max-width: 100%;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.theme-toggle:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  color: #000000;
+}
+
+/* Form Styles */
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #333;
+  background: #fafafa;
+  box-sizing: border-box;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #ffffff;
+  background: #ffffff;
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #f6f6f6;
+  transform: translateY(-2px);
+  color: black;
+}
+
+/* Resume Output Styles */
+#resumeOutput {
+  margin-top: 30px;
+display: block;
+  gap: 20px;
+}
+
+.resume-header, .resume-section {
+  background: #ffffff;
+  padding: 20px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.resume-header p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.resume-section h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+}
+
+.resume-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.resume-section ul {
+  list-style: disc;
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.resume-section ul li {
+  font-size: 16px;
+  color: #555;
+}
+
+.resume-section hr {
+  border: none;
+  border-top: 2px dashed #ddd;
+  margin: 30px 0;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background: #0b0d27;
+  color: #ffffff;
+}
+
+
+
+.container.dark-theme {
+  background: #000000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container.dark-theme input, 
+.container.dark-theme textarea {
+  background: #f4f4f4;
+  border-color: #ffffff;
+  color: #000000;
+}
+
+.container.dark-theme input:focus, 
+.container.dark-theme textarea:focus {
+  border-color: #ffffff;
+  background: #ffffff;
+}
+
+.container.dark-theme button {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container.dark-theme button:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.container.dark-theme #resumeOutput {
+  border-top: 3px solid #ffffff;
+}
+
+.container.dark-theme #resumeOutput h2 {
+  border-bottom: 2px solid #b300aa;
+}
+@media (max-width: 765px) {
+  /* Container Styles */
+.container {
+  margin-top: 176px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 800px;
+  max-width: 100%;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+  
+}
+@media (max-width: 425px) {
+  /* Container Styles */
+.container {
+  margin-top: 592px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 800px;
+  max-width: 100%;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+  
+}

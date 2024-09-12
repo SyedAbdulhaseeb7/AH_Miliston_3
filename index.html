@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <title>Dynamic-RB-HASEEB </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Dynamic A_H Resume</h1>
+    <button id="themeToggle" class="theme-toggle">Theme</button>
+    <form id="resumeForm">
+      <!-- Personal Details -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" required></textarea>
+      </div>
+  
+      <!-- Skills -->
+      <div class="form-group">
+        <label for="skills">Skills (comma-separated)</label>
+        <textarea id="skills" required></textarea>
+      </div>
+  
+      <!-- Education -->
+      <div class="form-group">
+        <label for="education">Education</label>
+        <textarea id="education" required></textarea>
+      </div>
+  
+      <!-- Experience -->
+      <div class="form-group">
+        <label for="experience">Experience</label>
+        <textarea id="experience" required></textarea>
+      </div>
+  
+      <!-- Image Upload -->
+      <div class="form-group">
+        <label for="profileImage">Profile Image</label>
+        <input type="file" id="profileImage" accept="image/*" />
+      </div>
+  
+      <button type="submit">CREATE RESUME</button>
+    </form>
+  
+    <div id="resumeOutput"></div>
+  </div>
+  
+
+  <script src="giaic.js"></script>
+</body>
+</html>
